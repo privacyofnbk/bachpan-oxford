@@ -1,26 +1,286 @@
-<!-- MAIN NAVIGATION & BRANDING -->
-<header class="bg-white border-b border-slate-200 py-4 px-6 shadow-sm">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
-        <div class="flex items-center gap-4 text-center lg:text-left flex-col sm:flex-row">
-            
-            <!-- BOTH INDIVIDUAL LOGOS TOGETHER SIDE-BY-SIDE -->
-            <div class="flex items-center gap-3 justify-center">
-                <!-- 1. Bachpan Play School Logo File -->
-                <img src="bachpan-logo.png" alt="Bachpan Play School Logo" class="h-16 w-16 object-contain">
-                
-                <!-- A subtle divider line between the two individual logos -->
-                <div class="h-10 w-px bg-slate-300 hidden sm:block"></div>
-                
-                <!-- 2. Oxford Grammar High School Logo File -->
-                <img src="oxford-logo.png" alt="Oxford Grammar High School Logo" class="h-16 w-16 object-contain">
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachpan Play School & Oxford Grammar High School | Devarakonda</title>
+    <!-- Tailwind CSS CDN for modern, clean styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        oxfordBlue: '#1e3a8a',
+                        bachpanYellow: '#f59e0b',
+                        bachpanRed: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-            <!-- School Text Identity -->
-            <div>
-                <h1 class="text-xl md:text-2xl font-black text-oxfordBlue tracking-tight">BACHPAN & OXFORD GRAMMAR</h1>
-                <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Opp: Ayyappa Temple, M.B.N.R Road, Devarakonda</p>
-                <p class="text-xs italic text-bachpanRed font-medium">"Kyunki bachpan sirf ek baar aata hai"</p>
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-oxfordBlue text-white text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <span><i class="fas fa-phone text-bachpanYellow mr-1"></i> +91 9490437028</span>
+                <span><i class="fas fa-map-marker-alt text-bachpanYellow mr-1"></i> Opp: Ayyappa Temple, Devarakonda</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="bg-bachpanRed text-white text-[10px] font-bold px-2 py-0.5 rounded animate-pulse">STATUS:</span>
+                <span class="font-bold text-bachpanYellow">ADMISSIONS ARE OPEN for Academic Year 2026-27!</span>
             </div>
         </div>
-        
-        <!-- Navigation Links continue here... -->
+    </div>
+
+    <!-- MAIN NAVIGATION & BRANDING -->
+    <header class="bg-white border-b border-slate-200 py-4 px-6 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4 text-center lg:text-left flex-col sm:flex-row">
+                <!-- Placeholder for Logos -->
+                <div class="flex gap-2">
+                    <div class="w-14 h-14 bg-slate-200 rounded-full flex items-center justify-center text-[9px] font-bold text-slate-500 border border-slate-300">
+                        [Bachpan]
+                    </div>
+                    <div class="w-14 h-14 bg-slate-200 rounded-full flex items-center justify-center text-[9px] font-bold text-slate-500 border border-slate-300">
+                        [Oxford]
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-oxfordBlue tracking-tight">BACHPAN & OXFORD GRAMMAR</h1>
+                    <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Opp: Ayyappa Temple, M.B.N.R Road, Devarakonda</p>
+                    <p class="text-xs italic text-bachpanRed font-medium">"Kyunki bachpan sirf ek baar aata hai"</p>
+                </div>
+            </div>
+            
+            <nav class="flex flex-wrap justify-center gap-5 font-semibold text-sm">
+                <a href="#home" class="text-oxfordBlue hover:text-bachpanYellow transition">Home</a>
+                <a href="#sprout" class="text-slate-600 hover:text-oxfordBlue transition">SPROUT Curriculum</a>
+                <a href="#facilities" class="text-slate-600 hover:text-oxfordBlue transition">Facilities</a>
+                <a href="#notifications" class="text-slate-600 hover:text-oxfordBlue transition">Notice Board</a>
+                <a href="#contact" class="bg-bachpanRed text-white px-4 py-2 rounded-md hover:bg-red-600 transition text-xs font-bold">Apply Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO BANNER SECTION -->
+    <section id="home" class="relative bg-slate-900 text-white py-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="relative max-w-5xl mx-auto text-center z-10">
+            <span class="bg-bachpanYellow text-slate-900 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow">Delhi Based - India's Most Preferred School</span>
+            <h2 class="text-3xl md:text-5xl font-black mt-4 mb-4 leading-tight text-white">21 Years of Rich Educational Legacy</h2>
+            <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-6">Proudly featuring our Brand Ambassador <span class="text-bachpanYellow font-bold">Saina Nehwal</span> (Olympic Medalist). We provide premium early childhood care and high school academic foundations.</p>
+            
+            <!-- Quick Contact Snippet -->
+            <div class="bg-black/40 backdrop-blur-sm inline-block px-6 py-3 rounded-xl border border-white/10 text-sm font-medium mb-6">
+                <i class="fas fa-phone-alt text-bachpanYellow mr-2"></i> Quick Admission Help: <span class="text-white font-bold ml-1">9490437028 | 7732073493</span>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#notifications" class="bg-oxfordBlue text-white px-6 py-3 rounded-md font-bold hover:bg-blue-800 transition shadow-lg text-sm"><i class="fas fa-bell mr-2"></i>Curriculum Notifications</a>
+                <a href="#contact" class="bg-bachpanYellow text-slate-900 px-6 py-3 rounded-md font-bold hover:bg-amber-400 transition shadow-lg text-sm">Contact School Office</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SPROUT CURRICULUM SECTION -->
+    <section id="sprout" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold text-bachpanRed uppercase tracking-widest bg-red-50 px-3 py-1 rounded-full border border-red-200">Academic Framework</span>
+            <h2 class="text-3xl font-extrabold text-oxfordBlue mt-2">Our Proprietary SPROUT Curriculum</h2>
+            <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm">Specifically mapped to follow modern pedagogies and oriented firmly towards NEP 2020 guidelines.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- S -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-oxfordBlue">
+                <div class="w-10 h-10 bg-blue-100 text-oxfordBlue flex items-center justify-center font-black text-xl rounded-lg mb-4">S</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Structured Curriculum</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Carefully pre-planned and standardized weekly maps ensuring balanced, steady skill progression.</p>
+            </div>
+            <!-- P -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-bachpanYellow">
+                <div class="w-10 h-10 bg-amber-100 text-bachpanYellow flex items-center justify-center font-black text-xl rounded-lg mb-4">P</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Personalized Learning</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Adapting pathways to match each unique child's learning velocity, curiosity levels, and capabilities.</p>
+            </div>
+            <!-- R -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-bachpanRed">
+                <div class="w-10 h-10 bg-red-100 text-bachpanRed flex items-center justify-center font-black text-xl rounded-lg mb-4">R</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Rooted in Legacy</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Built soundly upon over 20 years of nationwide institutional trust and specialized child development data.</p>
+            </div>
+            <!-- O -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500">
+                <div class="w-10 h-10 bg-green-100 text-green-600 flex items-center justify-center font-black text-xl rounded-lg mb-4">O</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Oriented Towards NEP 2020</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Fully incorporating flexible, activity-focused frameworks compliant with the National Education Policy.</p>
+            </div>
+            <!-- U -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-purple-500">
+                <div class="w-10 h-10 bg-purple-100 text-purple-600 flex items-center justify-center font-black text-xl rounded-lg mb-4">U</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Unique Holistic Approach</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Going deep beyond books to nurture physical wellness, empathy, artistic curiosity, and core life skills.</p>
+            </div>
+            <!-- T -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-teal-500">
+                <div class="w-10 h-10 bg-teal-100 text-teal-600 flex items-center justify-center font-black text-xl rounded-lg mb-4">T</div>
+                <h4 class="font-bold text-lg text-slate-800 mb-1">Tech-driven Learning</h4>
+                <p class="text-slate-600 text-xs leading-relaxed">Integrating future-ready educational tools directly into modern lessons for early digital literacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY FACILITIES HIGHLIGHTS -->
+    <section id="facilities" class="bg-slate-100 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-oxfordBlue">Premium Campus Facilities</h2>
+                <p class="text-slate-600 text-sm mt-1">Ensuring absolute safety, high-end infrastructure, and experiential learning.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Tech Support 1 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-oxfordBlue rounded-full flex items-center justify-center mx-auto mb-3 text-lg"><i class="fas fa-pen-nib"></i></div>
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">Speak-O-Pen</h5>
+                    <p class="text-slate-500 text-xs">Interactive tech-enabled books making phonics and reading highly engaging.</p>
+                </div>
+                <!-- Tech Support 2 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center">
+                    <div class="w-12 h-12 bg-red-50 text-bachpanRed rounded-full flex items-center justify-center mx-auto mb-3 text-lg"><i class="fas fa-mobile-alt"></i></div>
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">360° Support App</h5>
+                    <p class="text-slate-500 text-xs">Real-time parent-teacher updates coupled with live campus air monitoring metrics.</p>
+                </div>
+                <!-- Security -->
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center">
+                    <div class="w-12 h-12 bg-amber-50 text-bachpanYellow rounded-full flex items-center justify-center mx-auto mb-3 text-lg"><i class="fas fa-video"></i></div>
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">24Hr Surveillance</h5>
+                    <p class="text-slate-500 text-xs">Continuous monitoring via CCTV camera networks protecting your children.</p>
+                </div>
+                <!-- Transit -->
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center">
+                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3 text-lg"><i class="fas fa-bus"></i></div>
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">Safe Bus Facility</h5>
+                    <p class="text-slate-500 text-xs">Reliable, well-routed transport fleets connecting across Devarakonda regions.</p>
+                </div>
+            </div>
+
+            <!-- Inline list of other facilities -->
+            <div class="mt-8 bg-white p-4 rounded-xl shadow-sm border border-slate-200 text-center text-xs font-semibold text-slate-600 flex flex-wrap justify-center gap-4 sm:gap-8">
+                <span><i class="fas fa-film text-oxfordBlue mr-1"></i> Mini Theatre</span>
+                <span><i class="fas fa-tv text-oxfordBlue mr-1"></i> AV Room</span>
+                <span><i class="fas fa-chalkboard text-oxfordBlue mr-1"></i> Prismart Classes</span>
+                <span><i class="fas fa-gamepad text-oxfordBlue mr-1"></i> Indoor Games & Activities</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTIFICATIONS BOARD -->
+    <section id="notifications" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+            <div>
+                <h2 class="text-3xl font-bold text-oxfordBlue"><i class="fas fa-bullhorn text-bachpanRed mr-2"></i>Curriculum Notifications</h2>
+                <p class="text-slate-600 text-xs mt-1">Download original flyers, exam schedules, and circular maps directly.</p>
+            </div>
+            <div class="flex gap-2 bg-slate-100 p-1 rounded-lg text-xs font-bold">
+                <button onclick="filterNotices('all')" class="px-3 py-1.5 rounded bg-oxfordBlue text-white" id="btn-all">All</button>
+                <button onclick="filterNotices('bachpan')" class="px-3 py-1.5 rounded text-slate-600 hover:bg-slate-200" id="btn-bachpan">Bachpan</button>
+                <button onclick="filterNotices('oxford')" class="px-3 py-1.5 rounded text-slate-600 hover:bg-slate-200" id="btn-oxford">Oxford</button>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="notice-container">
+            <!-- Dynamic Notice Entry 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-bachpanYellow notice-card" data-wing="bachpan">
+                <div class="flex justify-between items-start text-xs mb-3">
+                    <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-bold">Bachpan Play School</span>
+                    <span class="text-slate-400 font-medium">June 2026</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-base mb-2">SPROUT Learning Routine & Speak-O-Pen Tracker</h4>
+                <p class="text-slate-600 text-xs mb-4">The core monthly structure for nursery playgroup packages is live. Download to review speech progression markers.</p>
+                <a href="#" class="text-oxfordBlue text-xs font-bold uppercase hover:underline"><i class="fas fa-file-download mr-1"></i> Get Schedule PDF</a>
+            </div>
+
+            <!-- Dynamic Notice Entry 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-oxfordBlue notice-card" data-wing="oxford">
+                <div class="flex justify-between items-start text-xs mb-3">
+                    <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold">Oxford High School</span>
+                    <span class="text-slate-400 font-medium">June 2026</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-base mb-2">NEP 2020 High School Academic Split</h4>
+                <p class="text-slate-600 text-xs mb-4">Detailed break-up of internal metrics and laboratory project targets across Class 1 to Class 10 structures.</p>
+                <a href="#" class="text-oxfordBlue text-xs font-bold uppercase hover:underline"><i class="fas fa-file-download mr-1"></i> Get Syllabus PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT DETAILS & OFFICE FOOTER -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 pt-14 pb-8 px-6 border-t-4 border-oxfordBlue">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 mb-10">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-3">Bachpan & Oxford Devarakonda</h4>
+                <p class="text-xs leading-relaxed mb-4">Combining nationwide premium pre-school standards with absolute high school academic excellence. Visit our campus to meet administrative advisors.</p>
+                <div class="flex gap-3 text-white text-base">
+                    <a href="https://wa.me/919490437028" class="hover:text-bachpanYellow transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="hover:text-bachpanYellow transition"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-bachpanYellow transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-lg mb-3">Verified Office Hotlines</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="text-white font-medium"><i class="fas fa-phone text-bachpanYellow mr-2"></i>9490437028</li>
+                    <li class="text-white font-medium"><i class="fas fa-phone text-bachpanYellow mr-2"></i>7732073493</li>
+                    <li class="text-white font-medium"><i class="fas fa-phone text-bachpanYellow mr-2"></i>8142414564</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-lg mb-3">Campus Address Location</h4>
+                <p class="text-xs leading-relaxed mb-2"><i class="fas fa-map-marked-alt text-bachpanRed mr-2"></i> Opp: Ayyappa Temple,<br>M.B.N.R Road, Devarakonda,<br>Nalgonda District, Telangana.</p>
+                <span class="inline-block mt-2 text-[11px] font-bold text-bachpanYellow bg-white/5 border border-white/10 rounded px-2 py-1">Admissions: Open Now</span>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+            &copy; 2026 Bachpan Play School & Oxford Grammar High School, Devarakonda. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE NOTICES JAVASCRIPT -->
+    <script>
+        function filterNotices(wing) {
+            const cards = document.querySelectorAll('.notice-card');
+            const buttons = ['all', 'bachpan', 'oxford'];
+            
+            buttons.forEach(b => {
+                const btn = document.getElementById(`btn-${b}`);
+                if(b === wing) {
+                    btn.classList.add('bg-oxfordBlue', 'text-white');
+                    btn.classList.remove('text-slate-600', 'hover:bg-slate-200');
+                } else {
+                    btn.classList.remove('bg-oxfordBlue', 'text-white');
+                    btn.classList.add('text-slate-600', 'hover:bg-slate-200');
+                }
+            });
+
+            cards.forEach(card => {
+                if (wing === 'all') {
+                    card.style.display = 'block';
+                } else if (card.getAttribute('data-wing') === wing) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
